@@ -1,0 +1,79 @@
+//
+//type definitions
+//
+typedef NurseType = {Practitioner, Registered, Graduate} 
+typedef WorkingStatus = {InCharge, OnDuty, Observer} 
+typedef Speciality = {Proctologist, Surgical_Oncologist, Oncologist, Physician}
+typedef Departments = {GI, Oncology, Cardiology, Neurology}
+
+interface SubjectRole {
+    permission(Action, ObjectRole)    
+}
+
+interface ObjectRole {
+    permission(SubjectRole, Action)
+}
+  
+interface Nurse<Rank in NurseType, Status in WorkingStatus>  extends SubjectRole {
+     permission(Action, ObjectRole)    
+}
+
+ interface Doctor<Dept in Departments, Major in Speciality, Status in WorkingStatus> extends SubjectRole {}
+
+interface Patient<Dept in Departments, Illness, Ward> extends ObjectRole {}
+
+class Nurse<Registered, OnDuty> {
+   permission(wash, Patient)
+   permission(clean, Patient)
+}
+
+class Nurse<Practitioner, OnDuty> extends Nurse<Registered, OnDuty>{
+   permission(inject, Patient)
+   permission(perpare_colonoscopy, Patient<GI, "*", "*">)   
+}
+
+class Doctor<GI,"*", OnDuty> {
+   permission(colonoscopy, Patient<GI, "*", "*">)
+}
+
+class Doctor<GI,Proctologist, OnDuty> extends Doctor<GI, "*", OnDuty>{
+   permission(endoscopy, Patient<GI, "colon-cancer", "*">)   
+}
+
+class Patient<"*", "*", "*"> {
+   permission(Nurse<Practitioner, OnDuty>, inject)
+   permission(Nurse<Registered, OnDuty>, wash)
+   permission(Nurse<Registered, OnDuty>, clean)
+}
+
+class Patient<GI, "colon-cancer", "*"> extends Patient<"*", "*", "*">{
+   permission(Nurse<Practitioner, OnDuty>, prepare_colonoscopy)
+   permission(Doctor<Proctologist, OnDuty>, colonoscopy)
+   permission(Doctor<Proctologist, OnDuty>, endoscopy)
+}
+
+action inject(Nurse<Practitioner, "*">, Patient) 
+action wash(Nurse, Patient) 
+action colonoscopy(Doctor<GI, "*", OnDuty>, Patient<GI, "*", "*">)
+action prepare_colonoscopy(Nurse<GI, Practitioner, "*">, Patient<GI, "*", "*">)
+action endoscopy(Doctor<GI, Proctologist, OnDuty>, Patient<GI, "*", "*">)
+
+class Subject {
+   Subject () {}
+   AddRoles(SubjectRole) {}
+}
+    
+class Object {
+    Object () {}
+    AddRoles(ObjectRole) {}
+}
+
+session 1245 {
+    
+    Subject Jane, John, Martin ;
+            
+    Object Joan, Jessy, Jossep, Jack;   
+ 
+  
+    
+}

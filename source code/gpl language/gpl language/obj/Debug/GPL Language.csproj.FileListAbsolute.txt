@@ -1,0 +1,20 @@
+C:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Language\GPL Language\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Language\GPL Language\obj\Debug\NCTU.GenericPolicyLanguageLanguageService.Resources.resources
+C:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Language\GPL Language\obj\Debug\NCTU.GenericPolicyLanguageLanguageService.VSPackage.resources
+C:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Language\GPL Language\obj\Debug\GPL Language.csproj.GenerateResource.Cache
+C:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Language\GPL Language\bin\Debug\GPL Language.dll
+C:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Language\GPL Language\bin\Debug\GPL Language.pdb
+C:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Language\GPL Language\bin\Debug\GPL Language.pkgdef
+C:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Language\GPL Language\bin\Debug\Irony.dll
+C:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Language\GPL Language\obj\Debug\GPL Language.dll
+C:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Language\GPL Language\obj\Debug\GPL Language.pdb
+E:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Language\GPL Language\bin\Debug\GPL Language.dll
+E:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Language\GPL Language\bin\Debug\GPL Language.pdb
+E:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Language\GPL Language\bin\Debug\GPL Language.pkgdef
+E:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Language\GPL Language\bin\Debug\Irony.dll
+E:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Language\GPL Language\obj\Debug\ResolveAssemblyReference.cache
+E:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Language\GPL Language\obj\Debug\NCTU.GenericPolicyLanguageLanguageService.Resources.resources
+E:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Language\GPL Language\obj\Debug\NCTU.GenericPolicyLanguageLanguageService.VSPackage.resources
+E:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Language\GPL Language\obj\Debug\GPL Language.csproj.GenerateResource.Cache
+E:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Language\GPL Language\obj\Debug\GPL Language.dll
+E:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Language\GPL Language\obj\Debug\GPL Language.pdb

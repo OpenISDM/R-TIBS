@@ -1,0 +1,107 @@
+﻿//
+//type definitions
+//
+typedef Nursing; 
+typedef RegularNurse extends Nursing;
+typedef Registered extends RegularNurse;
+typedef Practitioner extends Registered;
+typedef NurseCategory;
+typedef Oncology, Pediatric extends NurseCategory;
+typedef WorkingStatus;
+typedef OnDuty, InCharge extends WorkingStatus;
+typedef Patients;
+typedef PediatricPatient extends Patients;
+typedef PediatricInfant, PediatricChildren extends PediatricPatient;
+
+interface SubjectRole {
+    Association(Action, ObjectRole){}    
+    }
+
+interface ObjectRole {
+    Association(SubjectRole, Action){} 
+    }
+
+class  Subject {
+        Subject (id, firstName, lastName) {}
+    }
+    
+class Object {
+    Object (id, name) {}
+    }
+
+    
+class Nurse<Rank extends Nursing, Category extends NurseCategory, Status extends WorkingStatus>  implements SubjectRole {
+    Nurse () {}    
+}
+
+class Doctor<Major, Status> implements SubjectRole {
+    Doctor() {}
+}
+
+class Patient<PatientType extends Patients, Treatment, Illness> implements ObjectRole {
+    Patient() {} 
+}
+
+class Patient2 implements ObjectRole {
+  Patient2() {}
+}
+
+initialize() {
+    
+    //
+    //instantiate subject roles and object roles
+    //
+    Nurse<Practitioner, Pediatric, OnDuty> pracNurse;
+    Nurse<Registered, Pediatric, OnDuty> regNurse;
+    
+Doctor<"Oncology", OnDuty> ocDoctor;
+    
+    
+    Patient<PediatricInfant, "Screening", "Temperature"> screening_TempInfant;
+    Patient<PediatricChildren, "Measuring", "Height">  measuring_HeightChildren;
+    
+Patient2 mm;
+regNurse.Association("washing", mm); 
+mm.Association("washing", regNurse); 
+    
+    
+    //
+    //invoke Asssociations
+    //
+    pracNurse.Association("order-screening-temperature", screening_TempInfant);
+    pracNurse.Association("order-measuring-height", measuring_HeightChildren);
+    regNurse.Association("check-temperature", screening_TempInfant);
+    regNurse.Association("measure-height", measuring_HeightChildren); 
+   
+ocDoctor.Association("oncology-order-scan", screening_TempInfant);
+regNurse.Association("oncology-scan", screening_TempInfant);
+screening_TempInfant.Association("oncology-scan", regNurse);
+screening_TempInfant.Association("oncology-order-scan", ocDoctor);
+    
+    screening_TempInfant.Association("check-temperature", regNurse);
+    screening_TempInfant.Association("order-screening-temperature", pracNurse);    
+    measuring_HeightChildren.Association("measure-height", regNurse);
+    measuring_HeightChildren.Association("order-measuring-height", pracNurse);
+
+    //
+    //Define Subtype relations------------------SHOULD BE automatically
+    //
+     // pracNurse.Relative(regNurse); //legal    //regNurse.Relative(pracNurse); illegal
+   
+}
+
+session 1245 {
+    
+    Subject Jane, John, Martin ;
+            
+    Object Joan, Jessy, Jossep, Jack;   
+ 
+    Martin := ocDoctor; 
+    John := regNurse;
+    Jane := pracNurse;
+    
+    Joan := mm;
+    Jessy := screening_TempInfant;
+    Jossep = Jack := measuring_HeightChildren;   
+    
+}

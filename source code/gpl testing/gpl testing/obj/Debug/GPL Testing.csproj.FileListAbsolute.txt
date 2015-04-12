@@ -1,0 +1,31 @@
+E:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Testing\GPL Testing\obj\Debug\GPL Testing.exe
+E:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Testing\GPL Testing\obj\Debug\GPL Testing.pdb
+E:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Testing\GPL Testing\bin\Debug\GPL Testing.exe.manifest
+E:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Testing\GPL Testing\bin\Debug\GPL Testing.application
+E:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Testing\GPL Testing\bin\Debug\GPL Testing.exe
+E:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Testing\GPL Testing\bin\Debug\GPL Testing.pdb
+E:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Testing\GPL Testing\bin\Debug\Irony.dll
+E:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Testing\GPL Testing\bin\Debug\GPL Language.pdb
+E:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Testing\GPL Testing\bin\Debug\FastColoredTextBox.pdb
+E:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Testing\GPL Testing\bin\Debug\FastColoredTextBox.xml
+E:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Testing\GPL Testing\obj\Debug\ResolveAssemblyReference.cache
+E:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Testing\GPL Testing\obj\Debug\GPL_Testing.Form1.resources
+E:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Testing\GPL Testing\obj\Debug\GPL_Testing.Properties.Resources.resources
+E:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Testing\GPL Testing\obj\Debug\GPL Testing.csproj.GenerateResource.Cache
+E:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Testing\GPL Testing\obj\Debug\GPL Testing.exe.manifest
+E:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Testing\GPL Testing\obj\Debug\GPL Testing.application
+C:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Testing\GPL Testing\bin\Debug\GPL Testing.exe.manifest
+C:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Testing\GPL Testing\bin\Debug\GPL Testing.application
+C:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Testing\GPL Testing\bin\Debug\GPL Testing.exe
+C:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Testing\GPL Testing\bin\Debug\GPL Testing.pdb
+C:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Testing\GPL Testing\bin\Debug\GPL Language.dll
+C:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Testing\GPL Testing\bin\Debug\Irony.dll
+C:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Testing\GPL Testing\bin\Debug\GPL Language.pdb
+C:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Testing\GPL Testing\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Testing\GPL Testing\obj\Debug\GPL_Testing.Properties.Resources.resources
+C:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Testing\GPL Testing\obj\Debug\GPL Testing.csproj.GenerateResource.Cache
+C:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Testing\GPL Testing\obj\Debug\GPL Testing.exe.manifest
+C:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Testing\GPL Testing\obj\Debug\GPL Testing.application
+C:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Testing\GPL Testing\obj\Debug\GPL Testing.exe
+C:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Testing\GPL Testing\obj\Debug\GPL Testing.pdb
+C:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Testing\GPL Testing\obj\Debug\GPL_Testing.FormMain.resources

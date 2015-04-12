@@ -1,0 +1,86 @@
+typedef NurseTypes
+typedef Graduate extends NurseTypes
+typedef Registered extends Graduate
+typedef Practitioner extends Registered
+
+typedef Speciality
+typedef Proctologist extends Speciality
+
+typedef InPatient 
+typedef Colon_Cancer extends InPatient
+
+typedef Departments
+typedef GI , Oncology extends Departments
+
+typedef WorkingStatus
+typedef Observer extends WorkingStatus
+typedef OnDuty extends Observer
+typedef InCharge extends OnDuty
+
+interface SubjectRole {
+    permission (Action, ObjectRole)
+}
+
+interface ObjectRole {
+    permission (Action, SubjectRole)
+}
+
+interface Nurse<Dept extends Departments, Rank extends NurseTypes, Status extends WorkingStatus> extends SubjectRole {
+}
+
+interface Doctor<Dept extends Departments, Major extends Speciality, Status extends WorkingStatus> extends SubjectRole {
+}
+
+interface Patient<Dept extends Departments, Type extends InPatient> extends ObjectRole {
+}
+
+action wash(Nurse<*, Registered, OnDuty>, Patient)
+action clean(Nurse<*, Registered, OnDuty>, Patient)
+action inject(Nurse<*, Practitioner, OnDuty>, Patient)
+action prepare_colonoscopy(Nurse<GI, Practitioner, OnDuty>, Patient<GI, *>)
+action colonoscopy(Doctor<GI, *, OnDuty>, Patient<GI, *>)
+action endoscopy(Doctor<GI, Proctologist, OnDuty>, Patient<GI, Colon_Cancer>)
+
+class Nurse<GI, Registered, OnDuty> {
+    permission(clean, Patient)
+    permission(wash, Patient)
+}
+
+
+class Nurse<GI, Practitioner, OnDuty> {
+    permission(inject, Patient)
+    permission(prepare_colonoscopy, Patient<GI, *>)
+}
+
+class Doctor<GI, *, OnDuty> {
+    permission(colonoscopy, Patient<GI, *>)
+}
+
+class Doctor<GI, Proctologist, OnDuty> {
+    permission(endoscopy, Patient<GI, Colon_Cancer>)
+}
+
+class Patient {
+    permission(clean, Nurse<*,Registered,OnDuty>)
+    permission(wash, Nurse<*,Registered,OnDuty>)
+    permission(inject,Nurse<*,Practitioner,OnDuty>)
+}
+class Patient<GI,*> {
+    permission(prepare_colonoscopy, Nurse<GI,Practitioner,OnDuty>)
+    permission(colonoscopy, Doctor<GI,*,OnDuty>)
+}
+
+class Patient<GI, Colon_Cancer> {
+    permission(endoscopy, Doctor<GI,Proctologist,OnDuty>)
+}
+
+
+session 7583 {
+    
+    Subject Karl, Allen;
+    Object Joan;
+    
+    Karl := new Doctor<GI, Proctologist, OnDuty>;
+    Allen := new Nurse<GI, Practitioner, OnDuty>;
+    Joan := new Patient<GI, Colon_Cancer>;
+}

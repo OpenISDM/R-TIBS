@@ -1,0 +1,4 @@
+C:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Testing\GPL Testing\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Testing\GPL Testing\obj\Release\GPL_Testing.Form1.resources
+C:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Testing\GPL Testing\obj\Release\GPL_Testing.Properties.Resources.resources
+C:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Testing\GPL Testing\obj\Release\GPL Testing.csproj.GenerateResource.Cache

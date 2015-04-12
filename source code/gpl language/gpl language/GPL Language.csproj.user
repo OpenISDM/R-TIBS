@@ -1,0 +1,7 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <StartAction>Program</StartAction>
+    <StartProgram>C:\Users\Kha Tho\Documents\Visual Studio 2008\Projects\GPL Language\GPL Language\Resources\Irony.GrammarExplorer.exe</StartProgram>
+    <StartArguments>/ranu /rootsuffix Exp</StartArguments>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,43 @@
+Windows Registry Editor Version 5.00
+
+[$RootKey$\InstalledProducts\GPL_Language]
+@="#110"
+"Package"="{60ce416e-cbf4-457e-8c16-8b585b24c245}"
+"ProductDetails"="#112"
+"PID"="1.0"
+"LogoID"="#400"
+[$RootKey$\Packages\{60ce416e-cbf4-457e-8c16-8b585b24c245}]
+@="NCTU.GPL_Language, GPL Language, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1ded2256cd1bc639"
+"InprocServer32"="%windir%\\SYSTEM32\\MSCOREE.DLL"
+"Class"="NCTU.GPL_Language"
+"Assembly"="GPL Language, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1ded2256cd1bc639"
+[$RootKey$\Languages\File Extensions\.gpl]
+@="{8dc3e970-1b31-3e4d-8cde-e06cfcf33b02}"
+[$RootKey$\Languages\Language Services\Generic Policy Language]
+@="{8dc3e970-1b31-3e4d-8cde-e06cfcf33b02}"
+"Package"="{60ce416e-cbf4-457e-8c16-8b585b24c245}"
+"LangResID"=dword:00000000
+"AutoOutlining"=dword:00000001
+"MatchBracesAtCaret"=dword:00000001
+"CodeSense"=dword:00000001
+"MatchBraces"=dword:00000001
+"EnableCommenting"=dword:00000001
+"ShowMatchingBrace"=dword:00000001
+[$RootKey$\Packages\{60ce416e-cbf4-457e-8c16-8b585b24c245}]
+"ID"=dword:00000068
+"MinEdition"="Standard"
+"ProductVersion"="1.0"
+"ProductName"="Generic Policy Language"
+"CompanyName"="NCTU"
+[$RootKey$\Services\{8dc3e970-1b31-3e4d-8cde-e06cfcf33b02}]
+@="{60ce416e-cbf4-457e-8c16-8b585b24c245}"
+"Name"="IronyLanguageService"
+[$RootKey$\Packages\{7b3d3300-66e3-3cb4-a7e8-d9fc125bd680}]
+@="NCTU.IronyPackage, GPL Language, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1ded2256cd1bc639"
+"InprocServer32"="%windir%\\SYSTEM32\\MSCOREE.DLL"
+"Class"="NCTU.IronyPackage"
+"Assembly"="GPL Language, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1ded2256cd1bc639"
+[$RootKey$\Packages\{7b3d3300-66e3-3cb4-a7e8-d9fc125bd680}\SatelliteDll]
+"Path"="C:\\Users\\Kha Tho\\Documents\\Visual Studio 2008\\Projects\\GPL Language\\GPL Language\\bin\\Debug"
+"DllName"="GPL LanguageUI.dll"
+
